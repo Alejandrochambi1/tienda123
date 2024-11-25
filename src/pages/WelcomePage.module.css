@@ -1,0 +1,90 @@
+.welcomeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #7241ff, #00ff00);
+    color: white;
+    text-align: center;
+  }
+  
+  .welcomeText {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .subText {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-in 0.5s both;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 1rem;
+    animation: fadeIn 1s ease-in 1s both;
+  }
+  
+  .actionButton {
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .actionButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .loadingAnimation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 10px;
+    animation: bounce 0.5s ease-in infinite;
+  }
+  
+  .circle:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .circle:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media (max-width: 768px) {
+    .welcomeText {
+      font-size: 2rem;
+    }
+  
+    .subText {
+      font-size: 1.2rem;
+    }
+  
+    .actionButton {
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  

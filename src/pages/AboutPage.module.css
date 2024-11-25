@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+.aboutPage {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  color: #7241ff;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #00ff00;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #7241ff;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aboutImage {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover .aboutImage {
+  transform: scale(1.05);
+}
+
+.valueCard {
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #2a2a2a;
+  color: white;
+  border: 2px solid #7241ff;
+  border-radius: 10px;
+}
+
+.valueCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(114, 65, 255, 0.3);
+}
+
+.valueIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00ff00;
+}
+
+.valueTitle {
+  font-size: 1.5rem;
+  color: #7241ff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.valueText {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .aboutImage {
+    margin-top: 2rem;
+  }
+
+  .valueCard {
+    margin-bottom: 1.5rem;
+  }
+}
+

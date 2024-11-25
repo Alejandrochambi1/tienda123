@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+.contactPage {
+  background-color: #1c1c1c;
+  min-height: 100vh;
+  padding: 4rem 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.contactRow {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(114, 65, 255, 0.2);
+}
+
+.formColumn {
+  padding: 3rem;
+}
+
+.title {
+  color: #7241ff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.description {
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.alert {
+  background-color: #00ff00;
+  color: #1c1c1c;
+  border: none;
+}
+
+.form {
+  margin-bottom: 2rem;
+}
+
+.formInput {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #7241ff;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.formInput:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 2px rgba(114, 65, 255, 0.5);
+}
+
+.submitButton {
+  background: linear-gradient(135deg, #7241ff, #00ff00);
+  border: none;
+  border-radius: 25px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(114, 65, 255, 0.3);
+}
+
+.buttonIcon {
+  margin-right: 0.5rem;
+}
+
+.contactInfo {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  color: #ffffff;
+}
+
+.infoTitle {
+  color: #00ff00;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.contactList {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.contactList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.icon {
+  margin-right: 1rem;
+  color: #7241ff;
+  font-size: 1.25rem;
+}
+
+.contactList a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactList a:hover {
+  color: #00ff00;
+}
+
+.map {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .contactRow {
+    flex-direction: column;
+  }
+
+  .formColumn,
+  .contactInfo {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .infoTitle {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactPage {
+    padding: 2rem 0;
+  }
+
+  .formColumn,
+  .contactInfo {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .infoTitle {
+    font-size: 1.5rem;
+  }
+}
+

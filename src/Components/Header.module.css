@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+
+.navbar {
+  background: #ffffff;
+  transition: all 0.3s ease;
+  font-family: "Orbitron", sans-serif;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbarBrand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brandName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.gradientText {
+  background: linear-gradient(to right, #7241ff, #00ff00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.tagline {
+  font-size: 0.8rem;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  color: #333 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  position: relative;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+}
+
+.navLink:hover,
+.navLink:focus,
+.navLink.active {
+  background-color: rgba(114, 65, 255, 0.1);
+  color: #7241ff !important;
+}
+
+.headerIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.iconButton {
+  color: #333 !important;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: relative;
+  background: none !important;
+  border: none !important;
+  display: flex;
+  align-items: center;
+}
+
+.iconButton:hover,
+.iconButton:focus {
+  color: #7241ff !important;
+}
+
+.cartBadge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #7241ff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartOffcanvas {
+  background: #fff;
+  color: #333;
+}
+
+.cartHeader {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.closeButton {
+  color: #333;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  background: none !important;
+  border: none !important;
+}
+
+.closeButton:hover {
+  color: #7241ff;
+  transform: rotate(90deg);
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cartItemImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.cartItemDetails {
+  flex-grow: 1;
+}
+
+.removeButton {
+  color: #ff3e3e;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  background: none !important;
+  border: none !important;
+}
+
+.removeButton:hover {
+  color: #ff0000;
+  transform: scale(1.2);
+}
+
+.cartTotal {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.checkoutButton,
+.clearCartButton {
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.checkoutButton {
+  background: #7241ff;
+  color: #fff;
+}
+
+.clearCartButton {
+  background: #ff3e3e;
+  color: #fff;
+}
+
+.checkoutButton:hover,
+.clearCartButton:hover {
+  opacity: 0.9;
+}
+
+.dropdownContainer {
+  position: relative;
+}
+
+.profileDropdown,
+.productsDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  border-radius: 0.5rem;
+  border: 1px solid #7241ff;
+}
+
+.productsDropdown {
+  right: auto;
+  left: 0;
+}
+
+.profileDropdown.show,
+.productsDropdown.show {
+  display: flex;
+}
+
+.profileLink,
+.productLink {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  background: none !important;
+  border: none !important;
+  text-align: left;
+}
+
+.profileLink:hover,
+.profileLink:focus,
+.productLink:hover,
+.productLink:focus {
+  background-color: rgba(114, 65, 255, 0.1) !important;
+  color: #7241ff !important;
+}
+
+.navbarToggle {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 8px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 16px;
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 8px;
+  transform: rotate(135deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: 8px;
+  transform: rotate(-135deg);
+}
+
+.dropdownIcon {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdownIcon.rotate {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 991px) {
+  .navbarCollapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 1rem;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbarCollapse.show {
+    display: block;
+  }
+
+  .navLinks {
+    margin-top: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .navLink {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 4px;
+  }
+
+  .headerIcons {
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dropdownContainer {
+    width: 100%;
+  }
+
+  .profileDropdown,
+  .productsDropdown {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding: 0.5rem 0;
+    display: none;
+  }
+
+  .profileDropdown.show,
+  .productsDropdown.show {
+    display: block;
+  }
+
+  .profileLink,
+  .productLink {
+    padding: 0.75rem 1rem;
+    margin: 0.25rem 0;
+    width: 100%;
+    display: block;
+  }
+
+  /* Eliminar animaciones del hamburger */
+  .hamburger span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #333;
+    left: 0;
+  }
+
+  .hamburger span:nth-child(1) { top: 0; }
+  .hamburger span:nth-child(2) { top: 8px; }
+  .hamburger span:nth-child(3) { top: 16px; }
+
+  /* Simplificar el estado activo del hamburger */
+  .hamburger.active span:nth-child(1) { transform: rotate(45deg); top: 8px; }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) { transform: rotate(-45deg); top: 8px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,292 @@
+.productsPage {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #7241ff;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px rgba(114, 65, 255, 0.5);
+}
+
+.searchGroup {
+  margin-bottom: 2rem;
+}
+
+.searchGroup input {
+  background-color: #ffffff;
+  border-color: #7241ff;
+  color: #333333;
+  transition: all 0.3s ease;
+}
+
+.searchGroup input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(114, 65, 255, 0.25);
+}
+
+.searchGroup input::placeholder {
+  color: #999;
+}
+
+.searchGroup .input-group-text {
+  background-color: #7241ff;
+  border-color: #7241ff;
+  color: #ffffff;
+}
+
+.productGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productCol {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 450px;
+  border-radius: 14px;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cardBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #7241ff, #00cc0a);
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .cardBackground {
+  opacity: 0.2;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card:hover .imageWrapper {
+  transform: scale(1.05);
+}
+
+.productImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.card:hover .productImage {
+  filter: brightness(1.1);
+}
+
+.productName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  max-height: 3.6em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+  color: #333333;
+}
+
+.productPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7241ff;
+  margin-bottom: 15px;
+}
+
+.cardActions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.addToCartBtn {
+  background: #7241ff;
+}
+
+.addToCartBtn:hover {
+  background: #5a33cc;
+}
+
+.detailsBtn {
+  background: #00cc0a;
+}
+
+.detailsBtn:hover {
+  background: #009908;
+}
+
+.btnIcon {
+  margin-right: 8px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    max-width: 250px;
+    height: 420px;
+  }
+
+  .imageWrapper {
+    height: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    max-width: 220px;
+    height: 400px;
+  }
+
+  .imageWrapper {
+    height: 160px;
+  }
+
+  .productName {
+    font-size: 1.1rem;
+  }
+
+  .productPrice {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .card {
+    max-width: 200px;
+    height: 380px;
+  }
+
+  .imageWrapper {
+    height: 140px;
+  }
+
+  .productName {
+    font-size: 1rem;
+  }
+
+  .productPrice {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cardContent {
+    padding: 15px;
+  }
+
+  .imageWrapper {
+    height: 200px;
+  }
+
+  .productName {
+    font-size: 1.2rem;
+  }
+
+  .productPrice {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+
+
+

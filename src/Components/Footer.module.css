@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+
+.footer {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+  color: #333;
+  font-family: 'Orbitron', sans-serif;
+  padding: 3rem 0;
+}
+
+.brandName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.gradientText {
+  background: linear-gradient(to right, #7241ff, #00ff00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #666;
+}
+
+.linkGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.footerLink {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.footerLink:hover,
+.footerLink:focus {
+  background-color: rgba(114, 65, 255, 0.1);
+  color: #7241ff;
+}
+
+.socialCol {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  border-radius: 50%;
+  border: 2px solid #7241ff;
+}
+
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+.containerThree:hover {
+  background-color: #3b5998;
+  transition-duration: .3s;
+}
+
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+  fill: #333;
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+  fill: #ffffff;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 991px) {
+  .socialCol {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .brandName {
+    text-align: center;
+  }
+
+  .tagline {
+    text-align: center;
+  }
+
+  .linkGrid {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card {
+    justify-content: center;
+  }
+}
+

@@ -1,0 +1,92 @@
+.categoryPage {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  min-height: 100vh;
+  overflow-y: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #7241ff;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.searchGroup {
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchGroup input {
+  background-color: #f0f0f0;
+  border: 2px solid #7241ff;
+  color: #333333;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.searchGroup input:focus {
+  box-shadow: 0 0 10px rgba(114, 65, 255, 0.5);
+  border-color: #00ff00;
+}
+
+.searchGroup input::placeholder {
+  color: #999;
+}
+
+.searchGroup .input-group-text {
+  background-color: #7241ff;
+  border-color: #7241ff;
+  color: #ffffff;
+  border-radius: 0 25px 25px 0;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .productGrid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .productGrid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .productGrid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .productGrid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+
+
+
+
